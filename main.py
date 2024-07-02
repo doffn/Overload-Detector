@@ -45,8 +45,8 @@ class CamApp(App):
         self.weight = 65
         self.timer = 5000
         
-        self.url = "http://192.168.210.91:8080/video"
-        #self.url = 0
+        #self.url = "http://192.000.000.00:8080/video" use the url given by the IP camera
+        self.url = 0  # use the webcam
         self.capture = cv2.VideoCapture(self.url)
 
         self.update_flag = True  # Flag variable to control the update process
